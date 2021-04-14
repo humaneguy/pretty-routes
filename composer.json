@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "PrettyRoutes\\": "src"
+            "Rootz\\": "src"
         }
     },
     "minimum-stability": "dev",
