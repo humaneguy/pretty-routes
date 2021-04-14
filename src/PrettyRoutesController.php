@@ -1,5 +1,8 @@
 <?php namespace Rootz;
 
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Route;
 use Closure;
 
@@ -8,7 +11,7 @@ class PrettyRoutesController {
     /**
      * Show pretty routes.
      *
-     * @return \Illuminate\Http\Response
+     * @return Application|Factory|View
      */
     public function show()
     {
