@@ -1,4 +1,4 @@
-<?php namespace PrettyRoutes;
+<?php namespace Rootz;
 
 use Route;
 use Closure;
