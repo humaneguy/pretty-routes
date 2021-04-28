@@ -30,7 +30,7 @@
                         <td class="py-3 px-6 text-left whitespace-nowrap">
                             <div class="flex items-center">
                                 <div class="mr-2">
-                                    <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">NEW</span>
+                                    <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">DELETE</span>
                                 </div>
                             </div>
                         </td>
