@@ -77,5 +77,9 @@
         </div>
     </div>
 </div>
+
+<footer class="w-full pin-b text-center border-t border-grey p-4">
+    Made by Gabriel Akinyosoye 🎉
+</footer>
 </body>
 </html>
