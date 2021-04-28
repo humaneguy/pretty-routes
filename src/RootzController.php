@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Closure;
 use Illuminate\Support\Facades\Route;
 
-class PrettyRoutesController {
+class RootzController {
     public function greet()
     {
         return view('rootz::welcome');
