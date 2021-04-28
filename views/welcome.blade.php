@@ -45,7 +45,7 @@
                         </td>
                         <td class="py-3 px-6 text-left">
                             <div class="flex items-center">
-                                <span>/welcome</span>
+                                <span>{{ $route->uri() }}</span>
                             </div>
                         </td>
                         <td class="py-3 px-6 text-center">
