@@ -1,7 +1,7 @@
-Pretty Routes for Laravel
+Laravel Rootz
 ====
 
-Visualise your routes in pretty format.
+Visualise your routes in an intuistic way.
 This is the Tailwind CSS version of https://github.com/garygreen/pretty-routes
 
 ![Pretty Routes](rootz.png)
