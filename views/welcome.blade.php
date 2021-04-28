@@ -50,7 +50,7 @@
                         </td>
                         <td class="py-3 px-6 text-center">
                             <div class="flex items-center justify-center">
-                                <span>No name</span>
+                                <span>{{ $route->getName() }}</span>
                             </div>
                         </td>
                         <td class="py-3 px-6 text-center">
