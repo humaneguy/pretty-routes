@@ -5,6 +5,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Closure;
+use Illuminate\Support\Facades\Route;
 
 class PrettyRoutesController {
     public function greet()

@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('hello', [PrettyRoutesController::class, 'greet']);
 
-Route::get(config('pretty-routes.url'), 'PrettyRoutes\PrettyRoutesController@show')
-    ->name('pretty-routes.show')
-    ->middleware(config('pretty-routes.middlewares'));
+Route::get('routes', [PrettyRoutesController::class, 'show'])
+    ->name('rootz.show')
+    ->middleware(config('rootz.middlewares'));
