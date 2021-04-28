@@ -31,9 +31,13 @@
                         <td class="py-3 px-6 text-left whitespace-nowrap">
                             <div class="flex items-center">
                                 @foreach (array_diff($route->methods(), config('rootz.hide_methods')) as $method)
-                                <div class="mr-2">
-                                    <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">{{ $method }}</span>
-                                </div>
+                                    @if($method === 'POST')
+                                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-blue-700 rounded">{{ $method }}</span>
+                                    @else
+                                        <div class="mr-2">
+                                            <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">{{ $method }}</span>
+                                        </div>
+                                    @endif
                                 @endforeach
                             </div>
                         </td>
