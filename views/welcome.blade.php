@@ -26,12 +26,13 @@
                     </tr>
                     </thead>
                     <tbody class="text-gray-600 text-sm font-light">
+                    @foreach($routes as $route)
                     <tr class="border-b border-gray-200 hover:bg-gray-100">
                         <td class="py-3 px-6 text-left whitespace-nowrap">
                             <div class="flex items-center">
                                 @foreach (array_diff($route->methods(), config('rootz.hide_methods')) as $method)
                                 <div class="mr-2">
-                                    <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">DELETE</span>
+                                    <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">{{ $method }}</span>
                                 </div>
                                 @endforeach
                             </div>
@@ -57,6 +58,7 @@
                             </div>
                         </td>
                     </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
