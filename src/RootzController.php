@@ -10,7 +10,22 @@ use Illuminate\Support\Facades\Route;
 class RootzController {
     public function greet()
     {
-        return view('rootz::welcome');
+        $middlewareClosure = function ($middleware) {
+            return $middleware instanceof Closure ? 'Closure' : $middleware;
+        };
+
+        $routes = collect(Route::getRoutes());
+
+        foreach (config('rootz.hide_matching') as $regex) {
+            $routes = $routes->filter(function ($value, $key) use ($regex) {
+                return !preg_match($regex, $value->uri());
+            });
+        }
+
+        return view('rootz::welcome', [
+            'routes' => $routes,
+            'middlewareClosure' => $middlewareClosure,
+        ]);
     }
 
     /**
