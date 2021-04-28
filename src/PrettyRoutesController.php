@@ -32,7 +32,7 @@ class PrettyRoutesController {
             });
         }
 
-        return view('pretty-routes::routes', [
+        return view('rootz::routes', [
             'routes' => $routes,
             'middlewareClosure' => $middlewareClosure,
         ]);
