@@ -29,3 +29,6 @@ php artisan vendor:publish --provider="Rootz\ServiceProvider"
 If accessing `/routes` isn't working, ensure that you've included the provider within the same area as all your package providers (before all your app's providers) to ensure it takes priority.
 
 By default pretty routes only enables itself when `APP_DEBUG` env is true. You can configure this on the published config as above, or add any custom middlewares.
+
+# Inspiration
+Thanks goes to [@garygreen](https://github.com/garygreen) that created [Pretty Routes](https://github.com/garygreen/pretty-routes)
