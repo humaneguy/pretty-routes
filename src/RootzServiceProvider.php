@@ -25,17 +25,17 @@ class RootzServiceProvider extends ServiceProvider {
     {
         $this->loadRoutesFrom(__DIR__.'/Http/routes.php');
         $this->mergeConfigFrom(
-            __DIR__ . '/../config.php', 'pretty-routes'
+            __DIR__ . '/../config.php', 'rootz'
         );
 
-        if (config('pretty-routes.debug_only', true) && empty(config('app.debug'))) {
+        if (config('rootz.debug_only', true) && empty(config('app.debug'))) {
             return;
         }
 
         $this->loadViewsFrom(dirname(__DIR__) . '/views', 'rootz');
 
         $this->publishes([
-            __DIR__ . '/../config.php' => config_path('pretty-routes.php')
+            __DIR__ . '/../config.php' => config_path('rootz.php')
         ]);
     }
 
