@@ -3,8 +3,6 @@
 use GabrielFemi\Rootz\RootzController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('hello', [RootzController::class, 'greet']);
-
-Route::get('routes', [RootzController::class, 'show'])
+Route::get('routes', [RootzController::class, 'greet'])
     ->name('rootz.show')
     ->middleware(config('rootz.middlewares'));
