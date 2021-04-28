@@ -1,9 +1,10 @@
-<?php namespace Rootz;
+<?php
+namespace GabrielFemi\Rootz;
 
-use Route;
-use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Illuminate\Routing\Route;
+use Illuminate\Support\ServiceProvider;
 
-class ServiceProvider extends IlluminateServiceProvider {
+class RootzServiceProvider extends ServiceProvider {
 
     /**
      * Register.
@@ -22,6 +23,7 @@ class ServiceProvider extends IlluminateServiceProvider {
      */
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__ . '/../routes.php');
         $this->mergeConfigFrom(
             __DIR__ . '/../config.php', 'pretty-routes'
         );
@@ -30,7 +32,7 @@ class ServiceProvider extends IlluminateServiceProvider {
             return;
         }
 
-        $this->loadViewsFrom(realpath(__DIR__ . '/../views'), 'pretty-routes');
+        $this->loadViewsFrom(dirname(__DIR__) . '/views', 'pretty-routes');
 
         $this->publishes([
             __DIR__ . '/../config.php' => config_path('pretty-routes.php')

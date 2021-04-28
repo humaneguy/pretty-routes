@@ -1,12 +1,16 @@
-<?php namespace Rootz;
+<?php
+namespace GabrielFemi\Rootz;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Route;
 use Closure;
 
 class PrettyRoutesController {
+    public function greet()
+    {
+        return view('rootz.welcome');
+    }
 
     /**
      * Show pretty routes.

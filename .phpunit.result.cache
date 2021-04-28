@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":307:{a:2:{s:7:"defects";a:2:{s:36:"RoutesTest::welcome_route_returns_ok";i:3;s:68:"GabrielFemi\Rootz\Tests\Feature\RoutesTest::welcome_route_returns_ok";i:3;}s:5:"times";a:2:{s:36:"RoutesTest::welcome_route_returns_ok";d:0.08;s:68:"GabrielFemi\Rootz\Tests\Feature\RoutesTest::welcome_route_returns_ok";d:0.071;}}}
