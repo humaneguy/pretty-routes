@@ -2,6 +2,7 @@ Pretty Routes for Laravel
 ====
 
 Visualise your routes in pretty format.
+This is the Tailwind CSS version of https://github.com/garygreen/pretty-routes
 
 ![Pretty Routes](rootz.png)
 
