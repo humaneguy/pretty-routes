@@ -54,7 +54,7 @@
             @foreach ($routes as $route)
                 <tr>
                     <td>
-                        @foreach (array_diff($route->methods(), config('pretty-routes.hide_methods')) as $method)
+                        @foreach (array_diff($route->methods(), config('rootz.hide_methods')) as $method)
                             <span class="tag tag-{{ $methodColours[$method] }}">{{ $method }}</span>
                         @endforeach
                     </td>
