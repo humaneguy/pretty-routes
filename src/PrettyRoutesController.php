@@ -9,7 +9,7 @@ use Closure;
 class PrettyRoutesController {
     public function greet()
     {
-        return view('rootz.welcome');
+        return view('rootz::welcome');
     }
 
     /**

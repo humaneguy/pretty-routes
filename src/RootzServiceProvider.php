@@ -23,7 +23,7 @@ class RootzServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/../routes.php');
+        $this->loadRoutesFrom(__DIR__.'/Http/routes.php');
         $this->mergeConfigFrom(
             __DIR__ . '/../config.php', 'pretty-routes'
         );
@@ -32,15 +32,15 @@ class RootzServiceProvider extends ServiceProvider {
             return;
         }
 
-        $this->loadViewsFrom(dirname(__DIR__) . '/views', 'pretty-routes');
+        $this->loadViewsFrom(dirname(__DIR__) . '/views', 'rootz');
 
         $this->publishes([
             __DIR__ . '/../config.php' => config_path('pretty-routes.php')
         ]);
 
-        Route::get(config('pretty-routes.url'), 'PrettyRoutes\PrettyRoutesController@show')
-            ->name('pretty-routes.show')
-            ->middleware(config('pretty-routes.middlewares'));
+//        Route::get(config('pretty-routes.url'), 'PrettyRoutes\PrettyRoutesController@show')
+//            ->name('pretty-routes.show')
+//            ->middleware(config('pretty-routes.middlewares'));
     }
 
 }
