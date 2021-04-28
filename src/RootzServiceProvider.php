@@ -37,10 +37,6 @@ class RootzServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__ . '/../config.php' => config_path('pretty-routes.php')
         ]);
-
-//        Route::get(config('pretty-routes.url'), 'PrettyRoutes\PrettyRoutesController@show')
-//            ->name('pretty-routes.show')
-//            ->middleware(config('pretty-routes.middlewares'));
     }
 
 }
