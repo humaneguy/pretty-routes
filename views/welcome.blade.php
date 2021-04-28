@@ -22,7 +22,6 @@
                         <th class="py-3 px-6 text-left">METHODS</th>
                         <th class="py-3 px-6 text-left">PATH</th>
                         <th class="py-3 px-6 text-center">NAME</th>
-                        <th class="py-3 px-6 text-center">status</th>
                         <th class="py-3 px-6 text-center">Actions</th>
                     </tr>
                     </thead>
@@ -37,21 +36,13 @@
                         </td>
                         <td class="py-3 px-6 text-left">
                             <div class="flex items-center">
-                                <div class="mr-2">
-                                    <img class="w-6 h-6 rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg"/>
-                                </div>
-                                <span>Eshal Rosas</span>
+                                <span>/welcome</span>
                             </div>
                         </td>
                         <td class="py-3 px-6 text-center">
                             <div class="flex items-center justify-center">
-                                <img class="w-6 h-6 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
-                                <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/women/2.jpg"/>
-                                <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+                                <span>No name</span>
                             </div>
-                        </td>
-                        <td class="py-3 px-6 text-center">
-                            <span class="bg-purple-200 text-purple-600 py-1 px-3 rounded-full text-xs">Active</span>
                         </td>
                         <td class="py-3 px-6 text-center">
                             <div class="flex item-center justify-center">
@@ -74,8 +65,6 @@
                             </div>
                         </td>
                     </tr>
-
-
 
 
                     <tr class="border-b border-gray-200 bg-gray-50 hover:bg-gray-100">
