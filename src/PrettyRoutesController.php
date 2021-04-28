@@ -26,7 +26,7 @@ class PrettyRoutesController {
 
         $routes = collect(Route::getRoutes());
 
-        foreach (config('pretty-routes.hide_matching') as $regex) {
+        foreach (config('rootz.hide_matching') as $regex) {
             $routes = $routes->filter(function ($value, $key) use ($regex) {
                 return !preg_match($regex, $value->uri());
             });
