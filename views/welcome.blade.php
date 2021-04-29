@@ -39,6 +39,8 @@
                                         <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-yellow-700 rounded">{{ $method }}</span>
                                     @elseif($method === 'PATCH')
                                         <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-blue-400 rounded">{{ $method }}</span>
+                                    @elseif($method === 'OPTIONS')
+                                        <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-indigo-500 rounded">{{ $method }}</span>
                                     @elseif($method === 'DELETE')
                                         <span class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-700 rounded">{{ $method }}</span>
                                     @else
